@@ -16,7 +16,7 @@ public class TaskRepository {
         List<TasksModel>list=new ArrayList<>();
         try {
 //            String query="select * from tasks";
-            String query="SELECT tasks.id,tasks.name,jobs.name as jobsname,users.fullname,tasks.start_date" +
+            String query="SELECT tasks.id,jobs.id as job_id,tasks.name,jobs.name as jobsname,users.fullname,tasks.start_date" +
                     ",tasks.end_date,status.name as statusname" +
                     " FROM tasks" +
                     " LEFT JOIN jobs" +
@@ -40,13 +40,13 @@ public class TaskRepository {
                 tasksModel.setStatusname(resultSet.getString("statusname"));
 
 //                tasksModel.setUser_id(resultSet.getInt("user_id"));
-//                tasksModel.setJob_id(resultSet.getInt("job_id"));
+                tasksModel.setJob_id(resultSet.getInt("job_id"));
 //                tasksModel.setStatus_id(resultSet.getInt("status_id"));
                 list.add(tasksModel);
             }
             connection.close();
         } catch (SQLException e) {
-            System.out.println("Error getJobs"+e.getMessage());
+            System.out.println("Error getTasks"+e.getMessage());
         }
         return list;
 

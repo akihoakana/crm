@@ -1,5 +1,8 @@
 package com.cybersoft.crm.service;
 
+import com.cybersoft.crm.DTO.GroupWorkDetails;
+import com.cybersoft.crm.DTO.StatusCountDTO;
+import com.cybersoft.crm.DTO.UserDetailDTO;
 import com.cybersoft.crm.model.JobsModel;
 import com.cybersoft.crm.repository.JobRepository;
 
@@ -28,6 +31,25 @@ public class JobService {
     public boolean deleteJobsServiceById(int id){
         int result=jobRepository.deleteJobsById(id);
         return (result>0)?true:false;
+    }
+    public StatusCountDTO getQuantityJobsById(int id, int idStatus){
+        int count1=jobRepository.getQuantityJobsById(id,1).getCount();
+        int count2=jobRepository.getQuantityJobsById(id,2).getCount();
+        int count3=jobRepository.getQuantityJobsById(id,3).getCount();
+        StatusCountDTO statusCountDTO =jobRepository.getQuantityJobsById(id,idStatus);
+        if ((count1+count2+count3)==0){
+            statusCountDTO.setCountPercent(0);
+        }
+        else {
+            statusCountDTO.setCountPercent(statusCountDTO.getCount()*100/(count1+count2+count3));
+        }
+        return statusCountDTO;
+    }
+    public List<UserDetailDTO> getNameByIdJobService(int id) {
+        return jobRepository.getNameByIdJob(id);
+    }
+    public List<GroupWorkDetails> getByIdJobService(int id){
+        return jobRepository.getByIdJob(id);
     }
 
 }

@@ -100,4 +100,21 @@ public class TasksModel {
     public void setStatus_id(int status_id) {
         this.status_id = status_id;
     }
+
+    @Override
+    public String toString() {
+        return "TasksModel{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", start_date='" + start_date + '\'' +
+                ", end_date='" + end_date + '\'' +
+                ", user_id=" + user_id +
+                ", job_id=" + job_id +
+                ", status_id=" + status_id +
+                ", jobsname='" + jobsname + '\'' +
+                ", usersfullname='" + usersfullname + '\'' +
+                ", usersemail='" + usersemail + '\'' +
+                ", statusname='" + statusname + '\'' +
+                '}';
+    }
 }

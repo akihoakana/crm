@@ -28,7 +28,7 @@ public class UserUpdateApi extends HttpServlet {
         userModel.setId(Integer.parseInt(req.getParameter("id")));
         userModel.setRole_id(Integer.parseInt(req.getParameter("role_id")));
         userModel.setEmail(req.getParameter("email"));
-        userModel.setPassword(req.getParameter("Password"));
+        userModel.setPassword(req.getParameter("password"));
         userModel.setFullname(req.getParameter("fullname"));
         userModel.setFirstname(req.getParameter("firstname"));
         userModel.setLastname(req.getParameter("lastname"));

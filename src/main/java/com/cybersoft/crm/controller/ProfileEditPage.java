@@ -11,6 +11,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet(name = "profileedit",urlPatterns = "/profile-edit")
@@ -23,32 +24,35 @@ public class ProfileEditPage extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        HttpSession session = req.getSession();
+        int id= (int) session.getAttribute("id");
+        int task_id=0;
+        if (req.getParameter("task_id")!=null && !req.getParameter("task_id").equals("")){
+            task_id= Integer.parseInt(req.getParameter("task_id"));
+            session.setAttribute("task_id",task_id);
+        }
         if (req.getParameter("name")!=null
                 && req.getParameter("start_date")!=null
                 && req.getParameter("end_date")!=null
                 && req.getParameter("job_id")!=null
                 && req.getParameter("status_id")!=null
-                && req.getParameter("tasks_id")!=null
-                && req.getParameter("user_id")!=null
                 && !req.getParameter("name").equals("")
                 && !req.getParameter("start_date").equals("")
                 && !req.getParameter("end_date").equals("")
                 && !req.getParameter("job_id").equals("")
                 && !req.getParameter("status_id").equals("")
-                && !req.getParameter("tasks_id").equals("")
-                && !req.getParameter("user_id").equals(""))
+                )
         {
             tasksModel.setName(req.getParameter("name"));
             tasksModel.setStart_date(req.getParameter("start_date"));
             tasksModel.setEnd_date(req.getParameter("end_date"));
             tasksModel.setJob_id(Integer.parseInt(req.getParameter("job_id")));
             tasksModel.setStatus_id(Integer.parseInt(req.getParameter("status_id")));
-            tasksModel.setId(Integer.parseInt(req.getParameter("tasks_id")));
-            tasksModel.setUser_id(Integer.parseInt(req.getParameter("user_id")));
-
+            tasksModel.setId((Integer) session.getAttribute("task_id"));
+            tasksModel.setUser_id(id);
             boolean isupdateUsersServiceByTaskSuccess=userService.updateUsersServiceByTask(tasksModel);
             if (isupdateUsersServiceByTaskSuccess){
-                resp.sendRedirect(req.getContextPath()+"/role");
+                resp.sendRedirect(req.getContextPath()+"/profile");
             }
         }else{
             req.setAttribute("tasks", taskService.getAllTasks());
@@ -56,7 +60,5 @@ public class ProfileEditPage extends HttpServlet {
             req.setAttribute("status", statusService.getStatusService());
             req.getRequestDispatcher("/profile-edit.jsp").forward(req,resp);
         }
-
-
     }
 }

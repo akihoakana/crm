@@ -159,7 +159,7 @@
                                             <td>
                                                 <a href="#" usersid="${users.getId()}" data-toggle="modal" data-target="#orangeModalSubscription" class="btn btn-default btn-rounded btn-update">Sửa</a>
                                                 <a href="#" usersid="${users.getId()}" class="btn btn-sm btn-danger btn-delete">Xóa</a>
-                                                <a href="user-details.jsp" class="btn btn-sm btn-info">Xem</a>
+                                                <a href="user-details?id=${users.getId()}" class="btn btn-sm btn-info">Xem</a>
                                             </td>
                                         </tr>
                                     </c:forEach>
@@ -191,13 +191,26 @@
                                                     <div class="md-form mb-5">
                                                         <label class="form-label" for="form1">Last Name</label>
                                                         <input type="text" id="form2" class="form-control validate" >
-
                                                     </div>
 
                                                     <div class="md-form mb-5">
                                                         <label class="form-label" for="form1">Username</label>
                                                         <input type="text" id="form3" class="form-control validate" >
+                                                    </div>
 
+                                                    <div class="md-form mb-5">
+                                                        <label class="form-label" for="form1">Full Name</label>
+                                                        <input type="text" id="form5" class="form-control validate" >
+                                                    </div>
+
+                                                    <div class="md-form mb-5">
+                                                        <label class="form-label" for="form1">Email</label>
+                                                        <input type="email" id="form6" class="form-control validate" >
+                                                    </div>
+
+                                                    <div class="md-form mb-5">
+                                                        <label class="form-label" for="form1">Password</label>
+                                                        <input type="password" id="form7" class="form-control validate" >
                                                     </div>
 
                                                     <div class="md-form mb-5">

@@ -2,6 +2,7 @@ package com.cybersoft.crm.controller;
 
 import com.cybersoft.crm.service.JobService;
 import com.cybersoft.crm.service.TaskService;
+import com.cybersoft.crm.service.UserService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,24 +12,20 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-@WebServlet(name = "userdetail",urlPatterns = "/user-detail")
+@WebServlet(name = "userdetails",urlPatterns = "/user-details")
 public class UserDetailPage extends HttpServlet {
-    private JobService jobService = new JobService();
-    private TaskService taskService = new TaskService();
-
-    //    @Override
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        if (req.getParameter("id")!=null && !req.getParameter("id").equals("")){
-//            int id = Integer.parseInt(req.getParameter("id"));
-//            req.setAttribute("groupworkdetail", jobService.getTaskServiceDetailById(id));
-//            req.getRequestDispatcher("/groupwork-detail.jsp").forward(req, resp);
-//        }
-//        else
-//            req.getRequestDispatcher("/groupwork.jsp").forward(req, resp);
-//    }
+    private UserService userService = new UserService();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("detail", taskService.getAllTasks());
-        req.getRequestDispatcher("/user-detail.jsp").forward(req, resp);
+        int id= Integer.parseInt(req.getParameter("id"));
+        req.setAttribute("profilecount1",userService.getQuantityUsersById(id,1));
+        req.setAttribute("profilecount2",userService.getQuantityUsersById(id,2));
+        req.setAttribute("profilecount3",userService.getQuantityUsersById(id,3));
+        req.setAttribute("fullname",userService.getFullnameEmailByIdService(id).getUsersfullname());
+        req.setAttribute("email",userService.getFullnameEmailByIdService(id).getUsersemail());
+        req.setAttribute("status1",userService.getTaskUsersByIdAndStatusService(id,1));
+        req.setAttribute("status2",userService.getTaskUsersByIdAndStatusService(id,2));
+        req.setAttribute("status3",userService.getTaskUsersByIdAndStatusService(id,3));
+        req.getRequestDispatcher("/user-details.jsp").forward(req, resp);
     }
 }

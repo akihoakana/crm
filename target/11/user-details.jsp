@@ -137,8 +137,8 @@
                                     <div class="user-content">
                                         <a href="javascript:void(0)"><img src="plugins/images/users/genu.jpg"
                                                 class="thumb-lg img-circle" alt="img"></a>
-                                        <h4 class="text-white">Nguyễn Văn Tèo</h4>
-                                        <h5 class="text-white">info.teo@gmail.com</h5>
+                                        <h4 class="text-white">${fullname}</h4>
+                                        <h5 class="text-white">${email}</h5>
                                     </div>
                                 </div>
                             </div>
@@ -147,77 +147,78 @@
                     </div>
                     <div class="col-md-8 col-xs-12">
                         <!-- BEGIN THỐNG KÊ -->
-	<div class="row">
-		<!--col -->
-		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-			<div class="white-box">
-				<div class="col-in row">
-					<div class="col-xs-12">
-						<h3 class="counter text-right m-t-15 text-danger">20%</h3>
-                    </div>
-                    <div class="col-xs-12">
-						<i data-icon="E" class="linea-icon linea-basic"></i>
-						<h5 class="text-muted vb text-center">CHƯA BẮT ĐẦU</h5>
-					</div>
-					<div class="col-md-12 col-sm-12 col-xs-12">
-						<div class="progress">
-							<div class="progress-bar progress-bar-danger" role="progressbar"
-								aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-								style="width: 20%"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /.col -->
-		<!--col -->
-		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-			<div class="white-box">
-				<div class="col-in row">
-					<div class="col-xs-12">
-						<h3 class="counter text-right m-t-15 text-megna">50%</h3>
-                    </div>
-                    <div class="col-xs-12">
-						<i class="linea-icon linea-basic" data-icon="&#xe01b;"></i>
-						<h5 class="text-muted vb text-center">ĐANG THỰC HIỆN</h5>
-					</div>
-					<div class="col-md-12 col-sm-12 col-xs-12">
-						<div class="progress">
-							<div class="progress-bar progress-bar-megna" role="progressbar"
-								aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-								style="width: 50%"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /.col -->
-		<!--col -->
-		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-			<div class="white-box">
-				<div class="col-in row">
-					<div class="col-xs-12">
-						<h3 class="counter text-right m-t-15 text-primary">30%</h3>
-                    </div>
-                    <div class="col-xs-12">
-						<i class="linea-icon linea-basic" data-icon="&#xe00b;"></i>
-						<h5 class="text-muted vb text-center">HOÀN THÀNH</h5>
-					</div>
-					<div class="col-md-12 col-sm-12 col-xs-12">
-						<div class="progress">
-							<div class="progress-bar progress-bar-primary" role="progressbar"
-								aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-								style="width: 30%"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /.col -->
-	</div>
-	<!-- END THỐNG KÊ -->
+                        <div class="row">
+                            <!--col -->
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class="white-box">
+                                    <div class="col-in row">
+                                        <div class="col-xs-12">
+                                            <h3 class="counter text-right m-t-15 text-danger">${profilecount1.getCount()}</h3>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <i data-icon="E" class="linea-icon linea-basic"></i>
+                                            <h5 class="text-muted vb text-center">Chưa bắt đầu</h5>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                                     style="width: ${profilecount1.getCountPercent()}%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.col -->
+                            <!--col -->
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class="white-box">
+                                    <div class="col-in row">
+                                        <div class="col-xs-12">
+                                            <h3 class="counter text-right m-t-15 text-megna">${profilecount2.getCount()}</h3>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <i class="linea-icon linea-basic" data-icon="&#xe01b;"></i>
+                                            <h5 class="text-muted vb text-center">Đang thực hiện</h5>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-megna" role="progressbar"
+                                                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                                     style="width: ${profilecount2.getCountPercent()}%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.col -->
+                            <!--col -->
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class="white-box">
+                                    <div class="col-in row">
+                                        <div class="col-xs-12">
+                                            <h3 class="counter text-right m-t-15 text-primary">${profilecount3.getCount()}</h3>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <i class="linea-icon linea-basic" data-icon="&#xe00b;"></i>
+                                            <h5 class="text-muted vb text-center">Hoàn thành</h5>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-primary" role="progressbar"
+                                                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                                     style="width: ${profilecount3.getCountPercent()}%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                        <!-- END THỐNG KÊ -->
 
-                    </div>
+
+                    </div>`
                 </div><br />
                 <!-- /.row -->
                 <!-- BEGIN DANH SÁCH CÔNG VIỆC -->
@@ -225,34 +226,18 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="white-box">
-                            <h3 class="box-title">Chưa thực hiện</h3>
+                            <h3 class="box-title">Chưa bắt đầu</h3>
                             <div class="message-center">
                                 <a href="#">
                                     <div class="mail-contnet">
-                                        <c:forEach  items = "${detail}"  var = "detail">
-                                            <h5>${detail.getName()}</h5>
-                                            <span class="mail-desc"></span>
-                                            <span class="time">${detail.getStart_date()}</span>
-                                            <span class="time">${detail.getEnd_date()}</span>
-
-<%--                                            <c:if test = "${detail.getId() ==4}">--%>
-<%--                                                <h5>${detail.getName()}</h5>--%>
-<%--                                                <span class="mail-desc"></span>--%>
-<%--                                                <span class="time">${detail.getStart_date()}</span>--%>
-<%--                                                <span class="time">${detail.getEnd_date()}</span>--%>
-<%--                                            </c:if>--%>
+                                        <c:forEach  items = "${status1}"  var = "status1">
+                                        <h5>${status1.getName()}</h5>
+                                        <span class="mail-desc"></span>
+                                        <span class="time">${status1.getStart_date()}</span>
+                                        <span class="time">${status1.getEnd_date()}</span>
                                         </c:forEach>
-
                                     </div>
-                                </a> 
-<%--                                <a href="#">--%>
-<%--                                    <div class="mail-contnet">--%>
-<%--                                        <h5>Thiết kế database</h5>--%>
-<%--                                        <span class="mail-desc"></span>--%>
-<%--                                        <span class="time">Bắt đầu: 05/07/2020</span>--%>
-<%--                                        <span class="time">Kết thúc: 17/07/2020</span>--%>
-<%--                                    </div>--%>
-<%--                                </a>--%>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -262,18 +247,12 @@
                             <div class="message-center">
                                 <a href="#">
                                     <div class="mail-contnet">
-                                        <h5>Phân tích hệ thống</h5>
-                                        <span class="mail-desc"></span>
-                                        <span class="time">Bắt đầu: 05/07/2020</span>
-                                        <span class="time">Kết thúc: 17/07/2020</span>
-                                    </div>
-                                </a> 
-                                <a href="#">
-                                    <div class="mail-contnet">
-                                        <h5>Thiết kế database</h5>
-                                        <span class="mail-desc"></span>
-                                        <span class="time">Bắt đầu: 05/07/2020</span>
-                                        <span class="time">Kết thúc: 17/07/2020</span>
+                                        <c:forEach  items = "${status2}"  var = "status2">
+                                            <h5>${status2.getName()}</h5>
+                                            <span class="mail-desc"></span>
+                                            <span class="time">${status2.getStart_date()}</span>
+                                            <span class="time">${status2.getEnd_date()}</span>
+                                        </c:forEach>
                                     </div>
                                 </a>
                             </div>
@@ -281,22 +260,16 @@
                     </div>
                     <div class="col-md-4">
                         <div class="white-box">
-                            <h3 class="box-title">Đã hoàn thành</h3>
+                            <h3 class="box-title">Hoàn thành</h3>
                             <div class="message-center">
                                 <a href="#">
                                     <div class="mail-contnet">
-                                        <h5>Phân tích hệ thống</h5>
-                                        <span class="mail-desc"></span>
-                                        <span class="time">Bắt đầu: 05/07/2020</span>
-                                        <span class="time">Kết thúc: 17/07/2020</span>
-                                    </div>
-                                </a> 
-                                <a href="#">
-                                    <div class="mail-contnet">
-                                        <h5>Thiết kế database</h5>
-                                        <span class="mail-desc"></span>
-                                        <span class="time">Bắt đầu: 05/07/2020</span>
-                                        <span class="time">Kết thúc: 17/07/2020</span>
+                                        <c:forEach  items = "${status3}"  var = "status3">
+                                            <h5>${status3.getName()}</h5>
+                                            <span class="mail-desc"></span>
+                                            <span class="time">${status3.getStart_date()}</span>
+                                            <span class="time">${status3.getEnd_date()}</span>
+                                        </c:forEach>
                                     </div>
                                 </a>
                             </div>

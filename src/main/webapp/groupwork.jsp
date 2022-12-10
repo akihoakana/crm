@@ -159,7 +159,7 @@
                                         <td>
                                             <a href="#" jobsid="${jobs.getId()}" data-toggle="modal" data-target="#orangeModalSubscription" class="btn btn-default btn-rounded btn-update">Sửa</a>
                                             <a href="#" jobsid="${jobs.getId()}" class="btn btn-sm btn-danger btn-delete">Xóa</a>
-                                            <a href="groupwork-details.jsp" class="btn btn-sm btn-info">Xem</a>
+                                            <a href="groupwork-details?job_id=${jobs.getId()}" class="btn btn-sm btn-info">Xem</a>
                                         </td>
                                     </tr>
                                     </c:forEach>

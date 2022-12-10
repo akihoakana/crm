@@ -134,7 +134,7 @@
                     <div class="col-md-2 col-12"></div>
                     <div class="col-md-8 col-xs-12">
                         <div class="white-box">
-                            <form class="form-horizontal form-material">
+                            <form class="form-horizontal form-material" action="http://localhost:8080/crm/profile-edit" method="get">
                                 <div class="form-group">
                                     <label class="col-md-12">Tên dự án</label>
                                     <div class="col-md-12">
@@ -180,7 +180,7 @@
                                 <div class="form-group">
                                     <div class="col-sm-12">
                                         <button type="submit" class="btn btn-success">Lưu lại</button>
-                                        <a href="http://localhost:8080/crm/profile?id=3" class="btn btn-primary">Quay lại</a>
+                                        <a href="http://localhost:8080/crm/profile" class="btn btn-primary">Quay lại</a>
                                     </div>
                                 </div>
                             </form>

@@ -29,13 +29,17 @@ $(document).ready(function() {
             var username=$("#form3").val()
             var role_id=$("#form4").find("option:selected").val()
             var rolename=$("#form4").find("option:selected").text()
-            if (firstname =="" || lastname =="" || username =="" || role_id ==""){
+            var fullname=$("#form5").val()
+            var email=$("#form6").val()
+            var password=$("#form7").val()
+
+            if (firstname =="" || lastname =="" || username =="" || role_id ==""|| fullname =="" || email =="" || password ==""){
                 alert("Name must be filled out");
                 return false;
             }
             $.ajax({
                 method: "post",
-                url: "http://localhost:8080/crm/api/user-update?firstname="+firstname+"&lastname="+lastname+"&username="
+                url: "http://localhost:8080/crm/api/user-update?firstname="+firstname+"&lastname="+lastname+"&password="+password+"&fullname="+fullname+"&email="+email+"&username="
                     +username+"&role_id="+role_id+"&id="+id,
             })
                 .done(function( data ) {

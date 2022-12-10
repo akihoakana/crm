@@ -157,8 +157,26 @@ LEFT JOIN status
 ON tasks.status_id = status.id
 left JOIN users
 ON tasks.user_id = users.id 
-where users.id= 1;  
+where users.id= 1;
 
+SELECT tasks.name,tasks.start_date,tasks.end_date
+FROM tasks 
+left JOIN status
+ON tasks.status_id = status.id
+left JOIN users
+ON tasks.user_id = users.id 
+where users.id=5 and status.id =1;    
+
+SELECT users.fullname,users.email 
+FROM users 
+where users.id=5;
+                    
+SELECT tasks.name,tasks.start_date,tasks.end_date,status.id
+FROM status 
+left JOIN tasks
+ON tasks.status_id = status.id
+left JOIN users
+ON tasks.user_id = users.id where users.id=4 ;
 -- groupwork-detail
 SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
 set session sql_mode='STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
@@ -173,32 +191,61 @@ ON tasks.job_id = jobs.id
 where jobs.id= 1 
 group by status.name ;
 
-SELECT  tasks.id,tasks.name as tasksname, jobs.name as jobsname,users.fullname,status.name as statusname ,count( status.name)
+SELECT status.name,  count( status.name) as count
 FROM tasks 
-left JOIN status
+right JOIN status
 ON tasks.status_id = status.id
 left JOIN users
 ON tasks.user_id = users.id 
-left JOIN jobs
-ON tasks.job_id = jobs.id
-where users.id= 2 
+where users.id= 4
+group by status.name ;
+SELECT * FROM crm_app.status;
+
+SELECT status.name,  count( status.name) as count
+FROM tasks 
+right JOIN status
+ON tasks.status_id = status.id
+left JOIN users
+ON tasks.user_id = users.id 
+where users.id= 4
 group by status.name ;
 
-SELECT  tasks.id,tasks.name as tasksname, jobs.name as jobsname,users.fullname,status.name as statusname 
+-- ///groupwork-detail
+SELECT  distinct users.fullname
 FROM tasks 
+left JOIN jobs
+ON tasks.job_id = jobs.id
+left JOIN users
+ON tasks.user_id = users.id 
+where jobs.id= 2 ;
+
+SELECT users.fullname,tasks.name,tasks.start_date,tasks.end_date,status.name as statusname
+FROM tasks 
+left JOIN jobs
+ON tasks.job_id = jobs.id
 left JOIN status
 ON tasks.status_id = status.id
 left JOIN users
 ON tasks.user_id = users.id 
+where jobs.id= 2 ;
+
+SELECT  count( status.name) as count
+FROM tasks 
 left JOIN jobs
 ON tasks.job_id = jobs.id
-where users.id= 2 ;
+left JOIN status
+ON tasks.status_id = status.id
+where jobs.id= 2 and status.id=1;
 
-  SELECT status.name,count(status.name)
-FROM status
-group by status.name;   
+-- ///////
 
-
+SELECT count( status.name) as count 
+FROM tasks 
+left JOIN status 
+ON tasks.status_id = status.id
+left JOIN users
+ON tasks.user_id = users.id
+ where users.id= 1 and status.id =3;
 
 SELECT fullname
 FROM users; 

@@ -164,7 +164,7 @@
                                             <td>
                                                 <a href="#" tasksid="${tasks.getId()}" data-toggle="modal" data-target="#orangeModalSubscription" class="btn btn-default btn-rounded btn-update">Sửa</a>
                                                 <a href="#" tasksid="${tasks.getId()}" class="btn btn-sm btn-danger btn-delete">Xóa</a>
-                                                <a href="groupwork-details.jsp" class="btn btn-sm btn-info">Xem</a>
+                                                <a href="groupwork-details?job_id=${tasks.getJob_id()}" class="btn btn-sm btn-info">Xem</a>
                                             </td>
                                     </tr>
                                     </c:forEach>

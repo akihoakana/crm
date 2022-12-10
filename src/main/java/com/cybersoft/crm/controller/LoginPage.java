@@ -1,6 +1,7 @@
 package com.cybersoft.crm.controller;
 
 import com.cybersoft.crm.service.LoginService;
+import com.cybersoft.crm.service.UserService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,7 +14,7 @@ import java.io.IOException;
 @WebServlet(name = "login",urlPatterns = "/login")
 public class LoginPage extends HttpServlet {
     private LoginService loginService=new LoginService();
-
+    private UserService userService=new UserService();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -28,6 +29,8 @@ public class LoginPage extends HttpServlet {
         if (isLogin){
             HttpSession session=req.getSession();
             session.setAttribute("login", true  );
+            session.setAttribute("id", userService.getIdByEmailService(email));
+            System.out.println(userService.getIdByEmailService(email));
             session.setMaxInactiveInterval(10*60) ;
             resp.sendRedirect(req.getContextPath());
         }
