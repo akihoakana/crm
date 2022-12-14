@@ -18,26 +18,33 @@ public class CustomFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+//        filterChain.doFilter(servletRequest, servletResponse);
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
         HttpSession session = request.getSession();
+        System.out.println("session0 = " + session);
         if (session.getAttribute("login") != null && !session.getAttribute("login").equals("")) {
             boolean isLoginSession = (boolean) session.getAttribute("login");
                 if (isLoginSession){
-                    if (request.getServletPath().equals("/login"))
+                    if (request.getServletPath().equals("/login")){
                         response.sendRedirect(request.getContextPath());
-                    else
-                    filterChain.doFilter(servletRequest, servletResponse);
-
+                    }
+                    else{
+                        filterChain.doFilter(servletRequest, servletResponse);
+                    }
                 }
-                else
+                else{
                     response.sendRedirect(request.getContextPath() + "/login");
+                }
         }
         else{
-            if (request.getServletPath().equals("/login"))
+            if (request.getServletPath().equals("/login")){
                 filterChain.doFilter(servletRequest, servletResponse);
-            else
+
+            }
+            else{
                 response.sendRedirect(request.getContextPath() + "/login");
+            }
         }
     }
 

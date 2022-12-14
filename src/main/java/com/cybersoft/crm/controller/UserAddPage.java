@@ -15,9 +15,8 @@ import java.io.IOException;
 @WebServlet(name = "useradd",urlPatterns = "/user-add")
 public class UserAddPage extends HttpServlet {
     private UserService userService=new UserService();
-    private UserModel userModel=new UserModel();
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         if (req.getParameter("fullname") != null
                 && req.getParameter("email") != null
                 && req.getParameter("password") != null
@@ -29,6 +28,7 @@ public class UserAddPage extends HttpServlet {
                 && !req.getParameter("phone").equals("")
                 && !req.getParameter("country").equals(""))
         {
+            UserModel userModel=new UserModel();
             userModel.setFullname(req.getParameter("fullname"));
             userModel.setPassword(req.getParameter("password"));
             userModel.setEmail(req.getParameter("email"));
@@ -38,8 +38,17 @@ public class UserAddPage extends HttpServlet {
             if (isSuccess) {
                 resp.sendRedirect(req.getContextPath() + "/user");
             }
-        } else {
+            else {
+                req.getRequestDispatcher("/user-add.html").forward(req, resp);
+            }
+        }else {
             req.getRequestDispatcher("/user-add.html").forward(req, resp);
         }
+
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+            req.getRequestDispatcher("/user-add.html").forward(req, resp);
     }
 }

@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.time.LocalDate;
 
 @WebServlet(name = "profileedit",urlPatterns = "/profile-edit")
 public class ProfileEditPage extends HttpServlet {
@@ -24,6 +25,14 @@ public class ProfileEditPage extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+            req.setAttribute("tasks", taskService.getAllTasks());
+            req.setAttribute("jobs", jobService.getAllJobs());
+            req.setAttribute("status", statusService.getStatusService());
+            req.getRequestDispatcher("/profile-edit.jsp").forward(req,resp);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
         int id= (int) session.getAttribute("id");
         int task_id=0;
@@ -41,7 +50,7 @@ public class ProfileEditPage extends HttpServlet {
                 && !req.getParameter("end_date").equals("")
                 && !req.getParameter("job_id").equals("")
                 && !req.getParameter("status_id").equals("")
-                )
+        )
         {
             tasksModel.setName(req.getParameter("name"));
             tasksModel.setStart_date(req.getParameter("start_date"));
@@ -50,9 +59,17 @@ public class ProfileEditPage extends HttpServlet {
             tasksModel.setStatus_id(Integer.parseInt(req.getParameter("status_id")));
             tasksModel.setId((Integer) session.getAttribute("task_id"));
             tasksModel.setUser_id(id);
+            LocalDate start =LocalDate.parse(req.getParameter("start_date"));
+            LocalDate end =LocalDate.parse(req.getParameter("end_date"));
             boolean isupdateUsersServiceByTaskSuccess=userService.updateUsersServiceByTask(tasksModel);
-            if (isupdateUsersServiceByTaskSuccess){
+            if (isupdateUsersServiceByTaskSuccess  && end.isAfter(start)){
                 resp.sendRedirect(req.getContextPath()+"/profile");
+            }
+            else{
+                req.setAttribute("tasks", taskService.getAllTasks());
+                req.setAttribute("jobs", jobService.getAllJobs());
+                req.setAttribute("status", statusService.getStatusService());
+                req.getRequestDispatcher("/profile-edit.jsp").forward(req,resp);
             }
         }else{
             req.setAttribute("tasks", taskService.getAllTasks());

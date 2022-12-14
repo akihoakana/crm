@@ -18,25 +18,37 @@ $(document).ready(function() {
             })
     })
 })
+
 $(document).ready(function() {
     $(".btn-update").click(function () {
         var id=$(this).attr("tasksid")
         var This=$(this)
+        // var start = document.getElementById('form2');
+        // var end = document.getElementById('form3');
+        // start.addEventListener('change', function() {
+        // if (start.value)
+        // end.min = start.value;
+        // }, false);
+        // end.addEventLiseter('change', function() {
+        // if (end.value)
+        // start.max = end.value;
+        // }, false);
         $(".btn-send").click(function (e) {
                 e.preventDefault()
                 var name=$("#form1").val()
                 var start_date=$("#form2").val()
                 var end_date=$("#form3").val()
-                var usersfullname=$("#form4").find("option:selected").text()
-                var jobsname=$("#form5").find("option:selected").text()
-                var statusname=$("#form6").find("option:selected").text()
                 var User_id=$("#form4").find("option:selected").val()
                 var Job_id=$("#form5").find("option:selected").val()
                 var Status_id=$("#form6").find("option:selected").val()
+                var usersfullname=$("#form4").find("option:selected").text()
+                var jobsname=$("#form5").find("option:selected").text()
+                var statusname=$("#form6").find("option:selected").text()
             if (name =="" || start_date =="" || end_date =="" || User_id =="" || Job_id =="" || Status_id ==""){
                 alert("Name must be filled out");
                 return false;
             }
+
             $.ajax({
                 method: "post",
                 url: "http://localhost:8080/crm/api/task-update?name="+name+"&start_date="+start_date+"&end_date="
@@ -50,6 +62,8 @@ $(document).ready(function() {
                         This.closest("#row").find(".jobsname").text(jobsname)
                         This.closest("#row").find(".usersfullname").text(usersfullname)
                         This.closest("#row").find(".statusname").text(statusname)
+                        alert("Name1");
+
                     }
                     else
                         alert("Update task thất bại")

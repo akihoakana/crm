@@ -18,21 +18,29 @@ public class LoginPage extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-                req.getRequestDispatcher("/login.html").forward(req,resp);
+        req.getRequestDispatcher("/login.html").forward(req,resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String email=req.getParameter("email");
-        String password=req.getParameter("password");
-        boolean isLogin = loginService.checkLogin(email,password);
-        if (isLogin){
-            HttpSession session=req.getSession();
-            session.setAttribute("login", true  );
-            session.setAttribute("id", userService.getIdByEmailService(email));
-            System.out.println(userService.getIdByEmailService(email));
-            session.setMaxInactiveInterval(10*60) ;
-            resp.sendRedirect(req.getContextPath());
+        if (req.getParameter("email")!=null && req.getParameter("password")!=null
+                && !req.getParameter("email").equals("") && !req.getParameter("password").equals("")) {
+            String email=req.getParameter("email");
+            String password=req.getParameter("password");
+            boolean isLogin = loginService.checkLogin(email, password);
+            if (isLogin) {
+                HttpSession session = req.getSession(true);
+                session.setAttribute("login", true);
+                session.setAttribute("id", userService.getIdByEmailService(email));
+                session.setMaxInactiveInterval(10 * 60);
+                resp.sendRedirect(req.getContextPath());
+            }
+            else {
+                req.getRequestDispatcher("/login.html").forward(req,resp);
+            }
+        }
+        else {
+            req.getRequestDispatcher("/login.html").forward(req,resp);
         }
     }
 

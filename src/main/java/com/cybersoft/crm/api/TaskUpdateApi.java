@@ -19,13 +19,13 @@ import java.io.PrintWriter;
 @WebServlet(name = "taskUpdateApi",urlPatterns = "/api/task-update")
 public class TaskUpdateApi extends HttpServlet {
     private TaskService taskService = new TaskService();
-    private TasksModel tasksModel = new TasksModel();
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         PrintWriter out = resp.getWriter();
         resp.setContentType("application/json");
         resp.setCharacterEncoding("UTF-8");
+        TasksModel tasksModel = new TasksModel();
         tasksModel.setId(Integer.parseInt(req.getParameter("id")));
         tasksModel.setName(req.getParameter("name"));
         tasksModel.setStart_date(req.getParameter("start_date"));

@@ -12,25 +12,27 @@ import java.io.IOException;
 @WebServlet(name = "roleadd",urlPatterns = "/role-add")
 public class RoleAddPage extends HttpServlet {
     private RoleService roleService=new RoleService();
-//    @Override
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        req.getRequestDispatcher("/role-add.html").forward(req,resp);
-//    }
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.getRequestDispatcher("/role-add.html").forward(req,resp);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         if (req.getParameter("name")!=null && req.getParameter("description")!=null
                 && !req.getParameter("name").equals("") && !req.getParameter("description").equals("")){
             String name= req.getParameter("name");
             String description= req.getParameter("description");
             boolean isInsertRoleSuccess=roleService.insertRoleService(name,description);
-            System.out.println("isInsertRoleSuccess "+isInsertRoleSuccess);
             if (isInsertRoleSuccess){
                 resp.sendRedirect(req.getContextPath()+"/role");
             }
-        }else
+            else {
+                req.getRequestDispatcher("/role-add.html").forward(req,resp);
+            }
+        }else{
             req.getRequestDispatcher("/role-add.html").forward(req,resp);
-
-//        req.setAttribute("roles",roleService.getAllRoles());
+        }
     }
+
 }
