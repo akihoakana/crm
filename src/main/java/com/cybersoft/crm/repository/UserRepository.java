@@ -185,7 +185,6 @@ public class UserRepository{
         return resultSet;
     }
     public int updateUsersByTask(TasksModel tasksModel) {
-        System.out.println(tasksModel.toString());
         int resultSet=0;
         try {
             String query="UPDATE tasks" +
