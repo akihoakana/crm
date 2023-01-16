@@ -16,34 +16,39 @@ public class CustomFilter implements Filter {
 
     }
 
+//    @Override
+//    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+//        HttpServletRequest request = (HttpServletRequest) servletRequest;
+//        HttpServletResponse response = (HttpServletResponse) servletResponse;
+//        HttpSession session = request.getSession();
+//        if (session.getAttribute("login") != null && !session.getAttribute("login").equals("")) {
+//            boolean isLoginSession = (boolean) session.getAttribute("login");
+//                if (isLoginSession){
+//                    if (request.getServletPath().equals("/login")){
+//                        response.sendRedirect(request.getContextPath());
+//                    }
+//                    else{
+//                        filterChain.doFilter(servletRequest, servletResponse);
+//                    }
+//                }
+//                else{
+//                    response.sendRedirect(request.getContextPath() + "/login");
+//                }
+//        }
+//        else{
+//            if (request.getServletPath().equals("/login")){
+//                filterChain.doFilter(servletRequest, servletResponse);
+//
+//            }
+//            else{
+//                response.sendRedirect(request.getContextPath() + "/login");
+//            }
+//        }
+//    }
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        HttpServletRequest request = (HttpServletRequest) servletRequest;
-        HttpServletResponse response = (HttpServletResponse) servletResponse;
-        HttpSession session = request.getSession();
-        if (session.getAttribute("login") != null && !session.getAttribute("login").equals("")) {
-            boolean isLoginSession = (boolean) session.getAttribute("login");
-                if (isLoginSession){
-                    if (request.getServletPath().equals("/login")){
-                        response.sendRedirect(request.getContextPath());
-                    }
-                    else{
-                        filterChain.doFilter(servletRequest, servletResponse);
-                    }
-                }
-                else{
-                    response.sendRedirect(request.getContextPath() + "/login");
-                }
-        }
-        else{
-            if (request.getServletPath().equals("/login")){
-                filterChain.doFilter(servletRequest, servletResponse);
+        filterChain.doFilter(servletRequest, servletResponse);
 
-            }
-            else{
-                response.sendRedirect(request.getContextPath() + "/login");
-            }
-        }
     }
 
     @Override

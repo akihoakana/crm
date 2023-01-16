@@ -215,174 +215,61 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </div>
                 <!-- END THỐNG KÊ -->
 
-                <!-- BEGIN DANH SÁCH CÔNG VIỆC -->
-                <c:forEach  items = "${name}"  var = "name">
+<%--                <!-- BEGIN DANH SÁCH CÔNG VIỆC -->--%>
+<%--                <c:forEach  items = "${groupworkdetail}"  var = "groupworkdetail">--%>
 
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <a href="#" class="group-title">
-                                <img width="30" src="plugins/images/users/pawandeep.jpg" class="img-circle" />
-                                <span>${name.getUsersfullname()}</span>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="white-box">
-                                <h3 class="box-title">${name.getStatusname()}</h3>
-                                <div class="message-center">
-                                        <a href="#">
-                                            <div class="mail-contnet">
-                                                <h5>${name.getName()}</h5>
-                                                <span class="mail-desc">${name.getStart_date()}</span>
-                                                <span class="mail-desc">${name.getEnd_date()}</span>
-                                                    <%--                                            <span class="time">9:30 AM</span>--%>
-                                            </div>
-                                        </a>
-                                </div>
+<%--                    <div class="row">--%>
+<%--                        <div class="col-xs-12">--%>
+<%--                            <a href="#" class="group-title">--%>
+<%--                                <img width="30" src="plugins/images/users/pawandeep.jpg" class="img-circle" />--%>
+<%--                                <span>${groupworkdetail.getUsersfullname()}</span>--%>
+<%--                            </a>--%>
+<%--                        </div>--%>
+<%--                        <div class="col-md-4">--%>
+<%--                            <div class="white-box">--%>
+<%--                                <h3 class="box-title">${groupworkdetail.getStatusname()}</h3>--%>
+<%--                                <div class="message-center">--%>
+<%--                                        <a href="#">--%>
+<%--                                            <div class="mail-contnet">--%>
+<%--                                                <h5>${groupworkdetail.getName()}</h5>--%>
+<%--                                                <span class="mail-desc">${groupworkdetail.getStart_date()}</span>--%>
+<%--                                                <span class="mail-desc">${groupworkdetail.getEnd_date()}</span>--%>
+<%--                                            </div>--%>
+<%--                                        </a>--%>
+<%--                                </div>--%>
+<%--                            </div>--%>
+<%--                        </div>--%>
+<%--                    </div>--%>
+<%--                </c:forEach>--%>
+
+                <!-- BEGIN DANH SÁCH CÔNG VIỆC -->
+                <c:forEach  items = "${groupworkdetail}"  var = "groupworkdetail">
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="#" class="group-title">
+                            <img width="30" src="plugins/images/users/pawandeep.jpg" class="img-circle" />
+                            <span>${groupworkdetail.getFullname()}</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="white-box">
+                            <h3 class="box-title">${groupworkdetail.getStatusGroupWorkDetailsModelModels()}</h3>
+                            <div class="message-center">
+                                <a href="#">
+                                    <div class="mail-contnet">
+                                        <h5>Pavan kumar</h5>
+                                        <span class="mail-desc">${groupworkdetail.getUsersfullname()}</span>
+                                        <span class="time">${groupworkdetail.getUsersfullname()}</span>
+                                        <span class="time">${groupworkdetail.getUsersfullname()}</span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
+                </div>
                 </c:forEach>
 
-
-
-
-
-
-
-
-
-
-
-
-
-<%--                <c:forEach  items = "${name}"  var = "name">--%>
-
-<%--                <div class="row">--%>
-<%--                    <div class="col-xs-12">--%>
-<%--                        <a href="#" class="group-title">--%>
-<%--                            <img width="30" src="plugins/images/users/pawandeep.jpg" class="img-circle" />--%>
-<%--                            <span>${name.getName()}</span>--%>
-<%--                        </a>--%>
-<%--                    </div>--%>
-<%--                    <div class="col-md-4">--%>
-<%--                        <div class="white-box">--%>
-<%--                            <h3 class="box-title">Chưa bắt đầu</h3>--%>
-<%--                            <div class="message-center">--%>
-<%--                                <c:forEach  items = "${status1}"  var = "status1">--%>
-<%--                                <a href="#">--%>
-<%--                                    <div class="mail-contnet">--%>
-<%--                                        <h5>${status1.getName()}</h5>--%>
-<%--                                            <span class="mail-desc">${status1.getStart_date()}</span>--%>
-<%--                                            <span class="mail-desc">${status1.getEnd_date()}</span>--%>
-<%--&lt;%&ndash;                                            <span class="time">9:30 AM</span>&ndash;%&gt;--%>
-<%--                                    </div>--%>
-<%--                                </a>--%>
-<%--                                </c:forEach>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                    <div class="col-md-4">--%>
-<%--                        <div class="white-box">--%>
-<%--                            <h3 class="box-title">Đang thực hiện</h3>--%>
-<%--                            <div class="message-center">--%>
-<%--                                <c:forEach  items = "${status2}"  var = "status2">--%>
-<%--                                    <a href="#">--%>
-<%--                                        <div class="mail-contnet">--%>
-<%--                                            <h5>${status2.getName()}</h5>--%>
-<%--                                            <span class="mail-desc">${status2.getStart_date()}</span>--%>
-<%--                                            <span class="mail-desc">${status2.getEnd_date()}</span>--%>
-<%--                                                &lt;%&ndash;                                            <span class="time">9:30 AM</span>&ndash;%&gt;--%>
-<%--                                        </div>--%>
-<%--                                    </a>--%>
-<%--                                </c:forEach>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                    <div class="col-md-4">--%>
-<%--                        <div class="white-box">--%>
-<%--                            <h3 class="box-title">Hoàn thành</h3>--%>
-<%--                            <div class="message-center">--%>
-<%--                                <c:forEach  items = "${status3}"  var = "status3">--%>
-<%--                                    <a href="#">--%>
-<%--                                        <div class="mail-contnet">--%>
-<%--                                            <h5>${status3.getName()}</h5>--%>
-<%--                                            <span class="mail-desc">${status3.getStart_date()}</span>--%>
-<%--                                            <span class="mail-desc">${status3.getEnd_date()}</span>--%>
-<%--                                                &lt;%&ndash;                                            <span class="time">9:30 AM</span>&ndash;%&gt;--%>
-<%--                                        </div>--%>
-<%--                                    </a>--%>
-<%--                                </c:forEach>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                </div>--%>
-<%--                </c:forEach>--%>
-<%--////////////////////////////////////////////////--%>
-            <%--                <div class="row">--%>
-<%--                    <div class="col-xs-12">--%>
-<%--                        <a href="#" class="group-title">--%>
-<%--                            <img width="30" src="plugins/images/users/pawandeep.jpg" class="img-circle" />--%>
-<%--                            <span>Pavan kumar</span>--%>
-<%--                        </a>--%>
-<%--                    </div>--%>
-<%--                    <div class="col-md-4">--%>
-<%--                        <div class="white-box">--%>
-<%--                            <h3 class="box-title">Chưa thực hiện</h3>--%>
-<%--                            <div class="message-center">--%>
-<%--                                <a href="#">--%>
-<%--                                    <div class="mail-contnet">--%>
-<%--                                        <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span--%>
-<%--                                            class="time">9:30 AM</span>--%>
-<%--                                    </div>--%>
-<%--                                </a>--%>
-<%--                                <a href="#">--%>
-<%--                                    <div class="mail-contnet">--%>
-<%--                                        <h5>Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span>--%>
-<%--                                        <span class="time">9:10 AM</span>--%>
-<%--                                    </div>--%>
-<%--                                </a>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                    <div class="col-md-4">--%>
-<%--                        <div class="white-box">--%>
-<%--                            <h3 class="box-title">Đang thực hiện</h3>--%>
-<%--                            <div class="message-center">--%>
-<%--                                <a href="#">--%>
-<%--                                    <div class="mail-contnet">--%>
-<%--                                        <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span--%>
-<%--                                            class="time">9:30 AM</span>--%>
-<%--                                    </div>--%>
-<%--                                </a>--%>
-<%--                                <a href="#">--%>
-<%--                                    <div class="mail-contnet">--%>
-<%--                                        <h5>Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span>--%>
-<%--                                        <span class="time">9:10 AM</span>--%>
-<%--                                    </div>--%>
-<%--                                </a>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                    <div class="col-md-4">--%>
-<%--                        <div class="white-box">--%>
-<%--                            <h3 class="box-title">Đã hoàn thành</h3>--%>
-<%--                            <div class="message-center">--%>
-<%--                                <a href="#">--%>
-<%--                                    <div class="mail-contnet">--%>
-<%--                                        <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span--%>
-<%--                                            class="time">9:30 AM</span>--%>
-<%--                                    </div>--%>
-<%--                                </a>--%>
-<%--                                <a href="#">--%>
-<%--                                    <div class="mail-contnet">--%>
-<%--                                        <h5>Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span>--%>
-<%--                                        <span class="time">9:10 AM</span>--%>
-<%--                                    </div>--%>
-<%--                                </a>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                </div>--%>
                 <!-- END DANH SÁCH CÔNG VIỆC -->
             </div>
             <!-- /.container-fluid -->

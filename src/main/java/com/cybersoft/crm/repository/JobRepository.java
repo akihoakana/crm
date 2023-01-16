@@ -1,12 +1,11 @@
 package com.cybersoft.crm.repository;
 
-import com.cybersoft.crm.DTO.GroupWorkDetails;
+import com.cybersoft.crm.DTO.GroupWorkDetailsDTO;
 import com.cybersoft.crm.DTO.StatusCountDTO;
 import com.cybersoft.crm.DTO.UserDetailDTO;
 import com.cybersoft.crm.config.MysqlConnection;
 import com.cybersoft.crm.model.JobsModel;
 import com.cybersoft.crm.model.TasksModel;
-import com.cybersoft.crm.service.JobService;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -167,37 +166,6 @@ public class JobRepository {
             connection.close();
         } catch (SQLException e) {
             System.out.println("Error getTaskUsersByIdAndStatus"+e.getMessage());
-        }
-        return list;
-    }
-    public List<GroupWorkDetails> getByIdJob(int id) {
-        List<GroupWorkDetails> list=new ArrayList<>();
-        try {
-            String query="  SELECT users.fullname,tasks.name,tasks.start_date,tasks.end_date,status.name as statusname "  +
-                    " FROM tasks  "  +
-                    " left JOIN jobs "  +
-                    " ON tasks.job_id = jobs.id "  +
-                    " left JOIN status "  +
-                    " ON tasks.status_id = status.id "  +
-                    " left JOIN users "  +
-                    " ON tasks.user_id = users.id  "  +
-                    " where jobs.id= ?" ;
-            Connection connection= MysqlConnection.getConnection();
-            PreparedStatement preparedStatemen= connection.prepareStatement(query);
-            preparedStatemen.setInt(1,id);
-            ResultSet resultSet= preparedStatemen.executeQuery();
-            while (resultSet.next()){
-                GroupWorkDetails groupWorkDetails=new GroupWorkDetails();
-                groupWorkDetails.setUsersfullname(resultSet.getString("fullname"));
-                groupWorkDetails.setName(resultSet.getString("name"));
-                groupWorkDetails.setStart_date(resultSet.getString("start_date"));
-                groupWorkDetails.setEnd_date(resultSet.getString("end_date"));
-                groupWorkDetails.setStatusname(resultSet.getString("statusname"));
-                list.add(groupWorkDetails);
-            }
-            connection.close();
-        } catch (SQLException e) {
-            System.out.println("Error getByIdJob"+e.getMessage());
         }
         return list;
     }

@@ -7,9 +7,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11bf28e1-c263-499c-8f52-651acc4ba91a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/LogoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/LogoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/model/TasksModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/model/TasksModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/DTO/GroupWorkDetailsDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/model/StatusGroupWorkDetailsModelModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/model/TaskGroupWorkDetailsModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm.sql" beforeDir="false" afterPath="$PROJECT_DIR$/crm.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/DTO/GroupWorkDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/config/CustomFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/config/CustomFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/config/MysqlConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/config/MysqlConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/GroupWorkDetailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/GroupWorkDetailPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/JobRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/JobRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/TaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/JobService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/JobService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/groupwork-details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/groupwork-details.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/11/WEB-INF/classes/com/cybersoft/crm/DTO/GroupWorkDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/11/WEB-INF/classes/com/cybersoft/crm/config/MysqlConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/11/WEB-INF/classes/com/cybersoft/crm/config/MysqlConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/11/WEB-INF/classes/com/cybersoft/crm/controller/GroupWorkDetailPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/11/WEB-INF/classes/com/cybersoft/crm/controller/GroupWorkDetailPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/11/WEB-INF/classes/com/cybersoft/crm/repository/JobRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/11/WEB-INF/classes/com/cybersoft/crm/repository/JobRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/11/WEB-INF/classes/com/cybersoft/crm/repository/TaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/11/WEB-INF/classes/com/cybersoft/crm/repository/TaskRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/11/WEB-INF/classes/com/cybersoft/crm/service/JobService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/11/WEB-INF/classes/com/cybersoft/crm/service/JobService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/11/WEB-INF/classes/com/cybersoft/crm/service/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/11/WEB-INF/classes/com/cybersoft/crm/service/TaskService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cybersoft/crm/DTO/GroupWorkDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cybersoft/crm/config/MysqlConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cybersoft/crm/config/MysqlConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cybersoft/crm/controller/GroupWorkDetailPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cybersoft/crm/controller/GroupWorkDetailPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cybersoft/crm/repository/JobRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cybersoft/crm/repository/JobRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cybersoft/crm/repository/TaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cybersoft/crm/repository/TaskRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cybersoft/crm/service/JobService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cybersoft/crm/service/JobService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cybersoft/crm/service/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cybersoft/crm/service/TaskService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,91 +66,54 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/JobService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/DTO/GroupWorkDetailsDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-581">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="462">
+              <caret line="31" column="74" lean-forward="true" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="86" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#377#378#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
+                <element signature="e#435#436#0" expanded="true" />
+                <element signature="e#463#464#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#529#530#0" expanded="true" />
+                <element signature="e#577#578#0" expanded="true" />
+                <element signature="e#617#618#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/LoginService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/GroupWorkDetailPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-56">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="201">
+              <caret line="27" column="101" selection-start-line="27" selection-start-column="101" selection-end-line="27" selection-end-column="101" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/RoleService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/GroupWorkAddPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-392">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/StatusService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/TaskService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-301">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-609">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="357">
+              <caret line="21" column="78" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="78" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/model/TasksModel.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/groupwork-details.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="102" column="4" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/StatusRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-168">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/TaskRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1939">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/UserRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1897">
-              <caret line="187" selection-start-line="187" selection-end-line="187" />
+            <state relative-caret-position="5481">
+              <caret line="261" column="102" lean-forward="true" selection-start-line="261" selection-start-column="102" selection-end-line="261" selection-end-column="102" />
             </state>
           </provider>
         </entry>
@@ -153,11 +143,13 @@
       <find>setInt</find>
       <find>\n&quot;</find>
       <find>userRepository.getQuantityUsersById</find>
-      <find>&quot;</find>
-      <find>\n</find>
       <find>=</find>
       <find>val()</find>
       <find>href=&quot;#&quot;&gt;Đăng xuất</find>
+      <find>\n</find>
+      <find>&quot;</find>
+      <find>name</find>
+      <find>name.</find>
     </findStrings>
     <replaceStrings>
       <replace>,</replace>
@@ -168,9 +160,12 @@
       <replace>jobRepository.getQuantityJobsById</replace>
       <replace />
       <replace>:</replace>
-      <replace>:</replace>
       <replace>val(),</replace>
       <replace>href=&quot;/crm/logout&quot;&gt;Đăng xuất</replace>
+      <replace />
+      <replace>&quot;</replace>
+      <replace>groupworkdetail</replace>
+      <replace>groupworkdetail.</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -179,13 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/ProfileDetailPage.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/user.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/UserPage.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/user-details.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/â.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/model/StatusModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/DTO/StatusCountDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/DTO/UserDetailDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/UserDetailPage.java" />
@@ -193,12 +181,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/ProfilePage.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/users.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/api/UserUpdateApi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/TaskRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/DTO/GroupƯorkDetails.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/DTO/GroupWorkDetails.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/JobRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/JobService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/GroupWorkAddPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/UserAddPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/TaskAddPage.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/login.html" />
@@ -207,14 +190,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/api/RoleInsertApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/api/GroupWorkInsertApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/RoleAddPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/GroupWorkDetailPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/IndexPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/ProfileEditPage.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/404.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/blank.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/groupwork.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/groupwork-add.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/groupwork-details.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/profile.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/profile-edit.jsp" />
@@ -226,10 +207,24 @@
         <option value="$PROJECT_DIR$/src/main/webapp/user-details.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/user-table.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/config/CustomFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/LogoutPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/config/MysqlConnection.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/DTO/GroupWorkDetails.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/model/TasksModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/model/TaskStatusModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/model/TaskGroupWorkDetailsModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/JobRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/JobService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/config/CustomFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/model/StatusGroupWorkDetailsModelModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/TaskRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/TaskService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/DTO/GroupWorkDetailsDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/groupwork-details.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/GroupWorkAddPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/GroupWorkDetailPage.java" />
       </list>
     </option>
   </component>
@@ -259,12 +254,14 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="350" />
-    <option name="y" value="263" />
-    <option name="width" value="1529" />
-    <option name="height" value="745" />
+    <option name="x" value="246" />
+    <option name="y" value="175" />
+    <option name="width" value="1563" />
+    <option name="height" value="887" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <hideEmptyPackages ProjectPane="false" />
@@ -366,6 +363,17 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="cybersoft" type="462c0819:PsiDirectoryNode" />
               <item name="crm" type="462c0819:PsiDirectoryNode" />
+              <item name="DTO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="cybersoft" type="462c0819:PsiDirectoryNode" />
+              <item name="crm" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -433,7 +441,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../food/food_project-main6/food_project-main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../myhotel/hotel_booking" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -594,12 +602,14 @@
       <workItem from="1668366569619" duration="26000" />
       <workItem from="1668545990848" duration="1831000" />
       <workItem from="1670639541837" duration="29776000" />
-      <workItem from="1670845288344" duration="14678000" />
+      <workItem from="1670845288344" duration="14775000" />
+      <workItem from="1673800130641" duration="807000" />
+      <workItem from="1673887470295" duration="7075000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168221000" />
+    <option name="totallyTimeSpent" value="176200000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -611,10 +621,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="350" y="263" width="1529" height="745" extended-state="0" />
+    <frame x="246" y="175" width="1563" height="887" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21511233" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18762475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -624,7 +634,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.30637255" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39542484" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.54774535" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3984375" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -633,14 +643,14 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32843137" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32230392" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32210836" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32901135" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32875076" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3282626" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -648,7 +658,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2095366" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18762475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -657,24 +667,24 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3241491" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.43598056" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.30637255" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5490483" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3984375" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32908162" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32945284" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3294271" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32843137" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32596686" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32210836" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32901135" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32875076" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3282626" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -686,62 +696,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/groupwork-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="72" column="63" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/groupwork-details.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="85" column="63" selection-start-line="85" selection-start-column="63" selection-end-line="85" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="80" column="63" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/profile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="75" column="63" selection-start-line="75" selection-start-column="63" selection-end-line="75" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/profile-edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="74" column="63" selection-start-line="74" selection-start-column="63" selection-end-line="74" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/role-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="72" column="63" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/role-table.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="79" column="63" selection-start-line="79" selection-start-column="63" selection-end-line="79" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/task.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -830,40 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
           <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/config/CustomFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/config/MysqlConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/GroupWorkAddPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35">
-          <caret line="38" column="56" lean-forward="true" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/GroupWorkDetailPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="20" column="113" lean-forward="true" selection-start-line="20" selection-start-column="113" selection-end-line="26" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -973,23 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/model/JobsModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-266">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/JobRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3745">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/RoleRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1302">
@@ -997,44 +900,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/StatusRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/TaskRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1939">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1897">
-          <caret line="187" selection-start-line="187" selection-end-line="187" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/JobService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-581">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-56">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/RoleService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-392">
+        <state relative-caret-position="84">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
@@ -1046,24 +914,183 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/TaskService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-301">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="84">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/config/MysqlConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-609">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="294">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/model/UserModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/model/RoleModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/model/JobsModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/model/TasksModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="102" column="4" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
+        <state relative-caret-position="168">
+          <caret line="8" column="13" selection-start-line="3" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2546">
+          <caret line="187" selection-start-line="187" selection-end-line="187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/JobRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="170" column="5" selection-start-line="170" selection-start-column="5" selection-end-line="170" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/JobService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/config/CustomFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <caret line="18" selection-start-line="18" selection-start-column="2" selection-end-line="46" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/StatusRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/model/StatusModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/model/StatusGroupWorkDetailsModelModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/model/TaskGroupWorkDetailsModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/repository/TaskRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="144" column="41" selection-start-line="144" selection-start-column="41" selection-end-line="144" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/service/TaskService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/DTO/GroupWorkDetailsDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="31" column="74" lean-forward="true" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/GroupWorkAddPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="78" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cybersoft/crm/controller/GroupWorkDetailPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="27" column="101" selection-start-line="27" selection-start-column="101" selection-end-line="27" selection-end-column="101" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/groupwork-details.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5481">
+          <caret line="261" column="102" lean-forward="true" selection-start-line="261" selection-start-column="102" selection-end-line="261" selection-end-column="102" />
         </state>
       </provider>
     </entry>

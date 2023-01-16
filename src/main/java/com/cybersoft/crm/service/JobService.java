@@ -1,6 +1,6 @@
 package com.cybersoft.crm.service;
 
-import com.cybersoft.crm.DTO.GroupWorkDetails;
+import com.cybersoft.crm.DTO.GroupWorkDetailsDTO;
 import com.cybersoft.crm.DTO.StatusCountDTO;
 import com.cybersoft.crm.DTO.UserDetailDTO;
 import com.cybersoft.crm.model.JobsModel;
@@ -48,8 +48,6 @@ public class JobService {
     public List<UserDetailDTO> getNameByIdJobService(int id) {
         return jobRepository.getNameByIdJob(id);
     }
-    public List<GroupWorkDetails> getByIdJobService(int id){
-        return jobRepository.getByIdJob(id);
-    }
+
 
 }

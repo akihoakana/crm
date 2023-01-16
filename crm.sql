@@ -97,13 +97,13 @@ INSERT INTO tasks( name, start_date,end_date,user_id,job_id,status_id ) VALUES (
 INSERT INTO tasks( name, start_date,end_date,user_id,job_id,status_id ) VALUES ("Thiết kế hệ thống",'2019-06-22','2019-07-21',3,1,1);
 INSERT INTO tasks( name, start_date,end_date,user_id,job_id,status_id ) VALUES ("Thi công hệ thống",'2019-07-22','2019-08-21',4,2,1);
 INSERT INTO tasks( name, start_date,end_date ,user_id,job_id,status_id ) VALUES ("Kiểm định dự án",'2019-08-22','2019-09-21',2,2,1);
-INSERT INTO tasks( name, start_date,end_date ,user_id,job_id,status_id ) VALUES ("Kiểm định dự án 22",'2019-08-22','2019-09-21',3,2,1);
+INSERT INTO tasks( name, start_date,end_date ,user_id,job_id,status_id ) VALUES ("Kiểm định dự án 11",'2019-08-22','2019-09-21',3,2,1);
 INSERT INTO tasks( name, start_date,end_date ,user_id,job_id,status_id ) VALUES ("Kiểm định dự án 22",'2019-08-22','2019-09-21',4,2,1);
-INSERT INTO tasks( name, start_date,end_date ,user_id,job_id,status_id ) VALUES ("Kiểm định dự án 22",'2019-08-22','2019-09-21',4,2,1);
-INSERT INTO tasks( name, start_date,end_date,user_id,job_id,status_id ) VALUES ("Phân tích dự án 222",'2019-05-22','2019-06-21',2,1,2);
-INSERT INTO tasks( name, start_date,end_date,user_id,job_id,status_id ) VALUES ("Thiết kế hệ thống 222",'2019-06-22','2019-07-21',3,1,2);
-INSERT INTO tasks( name, start_date,end_date,user_id,job_id,status_id ) VALUES ("Phân tích dự án 333",'2019-05-22','2019-06-21',2,1,3);
-INSERT INTO tasks( name, start_date,end_date,user_id,job_id,status_id ) VALUES ("Thiết kế hệ thống 333",'2019-06-22','2019-07-21',3,1,3);
+INSERT INTO tasks( name, start_date,end_date ,user_id,job_id,status_id ) VALUES ("Kiểm định dự án 33",'2019-08-22','2019-09-21',4,2,1);
+INSERT INTO tasks( name, start_date,end_date,user_id,job_id,status_id ) VALUES ("Phân tích dự án 44",'2019-05-22','2019-06-21',2,1,2);
+INSERT INTO tasks( name, start_date,end_date,user_id,job_id,status_id ) VALUES ("Thiết kế hệ thống 55",'2019-06-22','2019-07-21',3,1,2);
+INSERT INTO tasks( name, start_date,end_date,user_id,job_id,status_id ) VALUES ("Phân tích dự án 66",'2019-05-22','2019-06-21',2,1,3);
+INSERT INTO tasks( name, start_date,end_date,user_id,job_id,status_id ) VALUES ("Thiết kế hệ thống 77",'2019-06-22','2019-07-21',3,1,3);
 
 UPDATE users
 SET email = 'Alfrednguyenvand@gmail.com', password= '456789',fullname='Alfrednguyenvand',firstname= 'Alfred',lastname= 'nguyenvand',username= 'Alfrednguyenvand',role_id=1
@@ -199,6 +199,7 @@ left JOIN users
 ON tasks.user_id = users.id 
 where users.id= 4
 group by status.name ;
+
 SELECT * FROM crm_app.status;
 
 SELECT status.name,  count( status.name) as count
@@ -221,13 +222,24 @@ where jobs.id= 2 ;
 
 SELECT users.fullname,tasks.name,tasks.start_date,tasks.end_date,status.name as statusname
 FROM tasks 
-left JOIN jobs
-ON tasks.job_id = jobs.id
 left JOIN status
 ON tasks.status_id = status.id
+left JOIN jobs
+ON tasks.job_id = jobs.id
+left JOIN users
+ON tasks.user_id = users.id 
+where status.id= 2 ;
+
+SELECT tasks.name,tasks.start_date,tasks.end_date,status.name as statusname
+FROM tasks 
+left JOIN status
+ON tasks.status_id = status.id
+left JOIN jobs
+ON tasks.job_id = jobs.id
 left JOIN users
 ON tasks.user_id = users.id 
 where jobs.id= 2 ;
+
 
 SELECT  count( status.name) as count
 FROM tasks 
@@ -260,3 +272,31 @@ WHERE roles.id = 12;
 UPDATE status
 SET name = 'Hoàn thành'
 WHERE status.id = 3;
+
+
+SELECT tasks.id,tasks.name,tasks.start_date,tasks.end_date
+FROM tasks 
+left JOIN jobs
+ON tasks.job_id = jobs.id
+where jobs.id= 2 ;
+
+SELECT tasks.id,tasks.name,users.id
+-- users.fullname,tasks.start_date,tasks.end_date,status.name as statusname
+FROM tasks 
+left JOIN jobs
+ON tasks.job_id = jobs.id
+left JOIN users
+ON tasks.user_id = users.id
+left JOIN status
+ON tasks.status_id = status.id
+where jobs.id= 2 ;
+SELECT tasks.id,tasks.name,users.fullname,tasks.start_date,tasks.end_date,status.name as statusname
+FROM tasks 
+left JOIN jobs
+ON tasks.job_id = jobs.id
+left JOIN users
+ON tasks.user_id = users.id
+left JOIN status
+ON tasks.status_id = status.id
+group by status.name 
+where jobs.id= 2 and status.id=1;
