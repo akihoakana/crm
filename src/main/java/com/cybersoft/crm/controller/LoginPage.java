@@ -34,6 +34,7 @@ public class LoginPage extends HttpServlet {
                 session.setAttribute("id", userService.getIdByEmailService(email));
                 session.setMaxInactiveInterval(10 * 60);
                 resp.sendRedirect(req.getContextPath());
+                System.out.println("session.getAttribute(\"id\") = " + session.getAttribute("id"));
             }
             else {
                 req.getRequestDispatcher("/login.html").forward(req,resp);

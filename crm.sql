@@ -298,5 +298,16 @@ left JOIN users
 ON tasks.user_id = users.id
 left JOIN status
 ON tasks.status_id = status.id
+where jobs.id= 2 and status.id=1
 group by status.name 
-where jobs.id= 2 and status.id=1;
+;
+SELECT tasks.id,tasks.name,users.fullname,tasks.start_date,tasks.end_date,status.name as statusname
+FROM tasks 
+left JOIN jobs
+ON tasks.job_id = jobs.id
+left JOIN users
+ON tasks.user_id = users.id
+left JOIN status
+ON tasks.status_id = status.id
+where jobs.id= 2 
+;

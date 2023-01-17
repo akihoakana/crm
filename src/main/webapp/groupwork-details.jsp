@@ -17,7 +17,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
-    <title>Pixel Admin</title>
+    <title>456</title>
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Menu CSS -->
@@ -214,34 +214,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <!-- /.col -->
                 </div>
                 <!-- END THỐNG KÊ -->
-
-<%--                <!-- BEGIN DANH SÁCH CÔNG VIỆC -->--%>
-<%--                <c:forEach  items = "${groupworkdetail}"  var = "groupworkdetail">--%>
-
-<%--                    <div class="row">--%>
-<%--                        <div class="col-xs-12">--%>
-<%--                            <a href="#" class="group-title">--%>
-<%--                                <img width="30" src="plugins/images/users/pawandeep.jpg" class="img-circle" />--%>
-<%--                                <span>${groupworkdetail.getUsersfullname()}</span>--%>
-<%--                            </a>--%>
-<%--                        </div>--%>
-<%--                        <div class="col-md-4">--%>
-<%--                            <div class="white-box">--%>
-<%--                                <h3 class="box-title">${groupworkdetail.getStatusname()}</h3>--%>
-<%--                                <div class="message-center">--%>
-<%--                                        <a href="#">--%>
-<%--                                            <div class="mail-contnet">--%>
-<%--                                                <h5>${groupworkdetail.getName()}</h5>--%>
-<%--                                                <span class="mail-desc">${groupworkdetail.getStart_date()}</span>--%>
-<%--                                                <span class="mail-desc">${groupworkdetail.getEnd_date()}</span>--%>
-<%--                                            </div>--%>
-<%--                                        </a>--%>
-<%--                                </div>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                </c:forEach>--%>
-
                 <!-- BEGIN DANH SÁCH CÔNG VIỆC -->
                 <c:forEach  items = "${groupworkdetail}"  var = "groupworkdetail">
 
@@ -252,21 +224,27 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <span>${groupworkdetail.getFullname()}</span>
                         </a>
                     </div>
+                    <c:forEach  items = "${groupworkdetail.getStatusGroupWorkDetailsModelModels()}"  var = "status">
+
                     <div class="col-md-4">
                         <div class="white-box">
-                            <h3 class="box-title">${groupworkdetail.getStatusGroupWorkDetailsModelModels()}</h3>
+                            <h3 class="box-title">${status.getNameStatus()}</h3>
+                            <c:forEach  items = "${status.getTaskGroupWorkDetailsModels()}"  var = "task">
+
                             <div class="message-center">
                                 <a href="#">
                                     <div class="mail-contnet">
-                                        <h5>Pavan kumar</h5>
-                                        <span class="mail-desc">${groupworkdetail.getUsersfullname()}</span>
-                                        <span class="time">${groupworkdetail.getUsersfullname()}</span>
-                                        <span class="time">${groupworkdetail.getUsersfullname()}</span>
+                                        <h5>${task.getNameTask()}</h5>
+<%--                                        <span class="mail-desc">${task.getNameTask()}</span>--%>
+                                        <span class="time">${task.getStart_date()}</span>
+                                        <span class="time">task.getEnd_date()</span>
                                     </div>
                                 </a>
                             </div>
+                            </c:forEach>
                         </div>
                     </div>
+                    </c:forEach>
                 </div>
                 </c:forEach>
 

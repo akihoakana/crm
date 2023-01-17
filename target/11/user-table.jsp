@@ -159,7 +159,7 @@
                                             <td>
                                                 <a href="#" usersid="${users.getId()}" data-toggle="modal" data-target="#orangeModalSubscription" class="btn btn-default btn-rounded btn-update">Sửa</a>
                                                 <a href="#" usersid="${users.getId()}" class="btn btn-sm btn-danger btn-delete">Xóa</a>
-                                                <a href="user-details?id=${users.getId()}" class="btn btn-sm btn-info">Xem</a>
+                                                <a href="user-detail?id=${users.getId()}" class="btn btn-sm btn-info">Xem</a>
                                             </td>
                                         </tr>
                                     </c:forEach>

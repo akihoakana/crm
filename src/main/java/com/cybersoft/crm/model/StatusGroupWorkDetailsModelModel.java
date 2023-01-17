@@ -11,4 +11,16 @@ public class StatusGroupWorkDetailsModelModel {
     private int id;
     private String nameStatus;
     private List<TaskGroupWorkDetailsModel> taskGroupWorkDetailsModels;
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNameStatus() {
+        return nameStatus;
+    }
+
+    public List<TaskGroupWorkDetailsModel> getTaskGroupWorkDetailsModels() {
+        return taskGroupWorkDetailsModels;
+    }
 }
